@@ -1,0 +1,295 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/CircleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/traffic/protos/PedestrianCrossing.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/samples/contests/tower_of_hanoi/protos/YoubotFlag.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.4541178171891959 0.37911584046361585 0.8062556589698372 1.7714218656012495
+  position -0.16013729857315231 -1.6662760327474344 2.148282366104648
+  follow "e-puck"
+  followType "None"
+}
+Background {
+  skyColor [
+    0.4 0.7 1
+  ]
+}
+DirectionalLight {
+  ambientIntensity 1
+  direction 0.1 -0.5 0.3
+}
+RectangleArena {
+  translation -0.034516 -0.101091 0
+  floorSize 2 2
+  floorAppearance Parquetry {
+    type "light strip"
+    IBLStrength 3
+  }
+  wallHeight 0.08
+}
+E-puck {
+  hidden position_0_0 41.114454721195365
+  hidden position_0_1 38.30457235942208
+  hidden linearVelocity_0 0.00025572918903285665 -0.01271499642486057 -2.9665267836283954e-08
+  hidden angularVelocity_0 0.010502398710798912 0.00021122915533124885 1.0321267673396326e-09
+  hidden rotation_1 0 -1 0 2.9725254307108164
+  hidden linearVelocity_1 0.00025678533004149456 -0.012767508178019667 -3.6538594372399206e-11
+  hidden angularVelocity_1 0.6383754214643639 0.012839264839642553 1.942525275654196e-08
+  hidden rotation_2 0 -1 0 4.792863780558055
+  hidden linearVelocity_2 0.00025678533078762395 -0.012767508222087238 -3.8482994565603845e-12
+  hidden angularVelocity_2 0.638375421389267 0.012839268661158604 -1.877274705423979e-08
+  translation -0.37545932764100615 0.4645320470167479 0.0009360381456421738
+  rotation -0.0001518784050837972 -0.00015496260216258677 -0.9999999764597708 1.5506866548270033
+  controller "project-bruno-shawn-controller"
+}
+CircleArena {
+  translation -0.88 0.75 0.001
+  radius 0.15
+  floorAppearance Parquetry {
+    type "chequered"
+    IBLStrength 3
+  }
+  floorTileSize 0.05 0.05
+  wallHeight 1e-06
+}
+PedestrianCrossing {
+  translation -0.07 -0.06 -0.19
+  size 1.5 1.5
+}
+PedestrianCrossing {
+  translation -0.17 -0.14 -0.19
+  rotation 0 0 1 1.5708
+  name "pedestrian crossing(1)"
+  size 1.5 1.5
+}
+YoubotFlag {
+  translation 0 -0.17 -7.9778e-07
+  rotation 1 0 0 4.692820414042842e-06
+}
+SolidBox {
+  translation -0.95 -1.02 0.0499956
+  rotation 1 0 0 4.692820414042842e-06
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.6 0.52 0.0500026
+  rotation 1 0 0 4.692820414042842e-06
+  name "box(2)"
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.91 0.52 0.0500026
+  rotation 1 0 0 4.692820414042842e-06
+  name "box(10)"
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.59 0.84 0.050003
+  rotation 1 0 0 4.692820414042842e-06
+  name "box(11)"
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.9 0.84 0.050003
+  rotation 1 0 0 4.692820414042842e-06
+  name "box(12)"
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.26 -0.85 0.0499962
+  rotation 1 0 0 4.692820414042842e-06
+  name "box(9)"
+  size 0.1 0.2 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.26 0.79 0.0500021
+  rotation 1 0 0 4.692820414042842e-06
+  name "box(1)"
+  size 0.1 0.2 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.02 -0.85 0.0499962
+  rotation 1 0 0 4.692820414042842e-06
+  name "box(3)"
+  size 0.1 0.2 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.6 -0.2 0.0499978
+  rotation 8.756919999640137e-06 -2.346409999903575e-06 0.9999999999589053 0.523599
+  name "box(4)"
+  size 0.1 0.2 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.22 -0.85 0.0499962
+  rotation 1 0 0 4.692820414042842e-06
+  name "box(5)"
+  size 0.1 0.2 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.79 -0.29 0.0499971
+  rotation 1 0 0 4.692820414042842e-06
+  name "box(7)"
+  size 0.2 0.2 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.7 0.54 0.0499987
+  rotation 1 0 0 4.692820414042842e-06
+  name "box(8)"
+  size 0.2 0.2 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.82142 -0.976566 0.049996
+  rotation -6.406329999845984e-06 -2.6535899999362045e-06 0.9999999999759588 -0.785395307179586
+  name "box(6)"
+  size 0.1 0.3 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatT FALSE
+      filtering 0
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
